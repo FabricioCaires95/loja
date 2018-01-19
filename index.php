@@ -120,7 +120,9 @@
 							<figcaption> Fuzz Cardigan por R$ 129,90</figcaption>
 						</figure>
 					</a>
-				</li>		
+				</li>	
+
+	
 			</ol>
 		</section>
 

@@ -8,6 +8,7 @@
 				<li><a href="http://twitter.com/mirrorfashion"></a></li>
 				<li><a href="http://plus.google.com/mirrorfashion"></a></li>
 			</ul>
+			
 		</div>
 
 </footer>
