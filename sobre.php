@@ -37,6 +37,8 @@
 				se tiver dúvidas. Conheça também nossa <a href="#historia">história</a> e nossos <a href="#diferenciais">diferenciais</a>.
 			</p>	
 
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1292.7496684888156!2d-46.6324193668546!3d-23.58825265629193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1516461913351" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
 			<p> Acesse nossa loja <a href="index.html"> Aqui </a> </p>
 		</section>
 
@@ -70,6 +72,12 @@
 			<p>Dada a importância econômica da empresa para o Brasil, a família Pelho já recebeu diversos prêmios, 
 			homenagens e condecorações. Todos os presidentes do Brasil já visitaram as instalações da Mirror 
 			Fashion, além de presidentes da União Européia, Ásia e o secretário-geral da ONU.</p>
+
+
+			<iframe width="420" heigth="390" src="http://www.youtube.com/embed/Tb06abHE4hy" 
+				frameborder="0" allowfullscreen>				
+			</iframe>
+
 		</section>
 
 		<section>
@@ -83,7 +91,7 @@
 		
 		</article>
 
-
+	
 		<?php  include("rodape.php");?>
 
 </body>

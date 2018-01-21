@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title> Chekout</title>
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"> 
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-flatly.css">
 	
 	<style type="text/css">
@@ -77,8 +77,20 @@
 									<dd><?= $_POST['tamanho'] ?></dd>
 
 									<dt>Preço</dt>
-									<dd><?= $_POST['preco'] ?></dd>
+									<dd id="preco"><?= $_POST['preco'] ?></dd>
 								</dl>
+
+								<div class="form-group">
+									<label for="qt">Quantidade</label>
+									<input type="number" id="qt" class="form-control" min="0" max="99" value="1">
+								</div>
+
+								<div class="form-group">  
+									<label for="total">Total</label>
+									<output for="qt valor" id="total" class="form-control">
+										<?= $_POST["preco"] ?>
+									</output>
+								</div>
 
 							</div>
 
@@ -111,8 +123,8 @@
 
 									<div class="form-group">
 										<label for="cpf">CPF</label>
-										<input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" 
-											required>
+										<input type="text" class="form-control" id="cpf" name="cpf" 
+											placeholder="000.000.000-00"  data-mask="999.999.999-99" required>
 									</div>
 
 									<div class="checkbox">
@@ -132,7 +144,8 @@
 
 									<div class="form-group">
 										<label for="numero-cartao">Número - CVV</label>
-										<input type="text" class="form-control" id="numero-cartao" name="numero-cartao">
+										<input type="text" class="form-control" id="numero-cartao" name="numero-cartao"
+											data-mask="9999 9999 9999 999 - 999">
 									</div>
 
 									<div class="form-group">
@@ -154,7 +167,7 @@
 
 						</div>
 
-						<button type="submit" class="btn btn-primary">
+						<button type="submit" class="btn btn-primary ">
 							<span class="glyphicon glyphicon-thumbs-up"></span>
 							Confirmar Pedido
 						</button>
@@ -168,8 +181,11 @@
 
 		
 
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/inputmask-plugin.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/converteMoeda.js"></script>
+	<script type="text/javascript" src="js/total.js"></script>
 
 
 </body>

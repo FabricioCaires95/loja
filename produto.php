@@ -49,6 +49,9 @@
 
 						<input type="range" min="36" max="46" value="42" step="2" name="tamanho" id="tamanho">
 						
+						<output for="tamanho" name="valorTamanho"> 42 </output>
+
+
 						<input type="hidden" name="nome" value="Fuzzy Cardigan">
 						<input type="hidden" name="preco" value="19.00">
 					</fieldset>
@@ -94,11 +97,22 @@
 					</tbody>
 				</table>
 
+
 			</div>
 			
 		</div>
 	</div>
 	<?php include("rodape.php"); ?>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript">
+		
+		$('[name=tamanho').on('input',function(){
+			$('[name=valorTamanho').val(this.value);
+
+		});
+	</script>
+
 
 </body>
 </html>
